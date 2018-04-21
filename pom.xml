@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>coursera</groupId>
+    <artifactId>parallel-concurrent-distributed-programming-in-java</artifactId>
+    <version>1.0-SNAPSHOT</version>
+
+    <properties>
+        <pcdp.version>0.0.4-SNAPSHOT</pcdp.version>
+    </properties>
+
+    <repositories>
+        <repository>
+            <id>pcdp-repo</id>
+            <url>https://raw.github.com/habanero-maven/hjlib-maven-repo/mvn-repo-pcdp-${pcdp.version}/</url>
+            <snapshots>
+                <enabled>true</enabled>
+                <updatePolicy>always</updatePolicy>
+            </snapshots>
+        </repository>
+    </repositories>
+
+    <dependencies>
+        <dependency>
+            <groupId>edu.rice.pcdp</groupId>
+            <artifactId>pcdp-core</artifactId>
+            <version>${pcdp.version}</version>
+        </dependency>
+    </dependencies>
+
+</project>
